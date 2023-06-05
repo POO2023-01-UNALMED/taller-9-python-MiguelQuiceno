@@ -84,65 +84,7 @@ def escribir(num):
 def calcular(s):
     if "+" in s:
         s = s.split("+")
-        return float(s[0]) + float(s[1])from tkinter import Tk, Button, Entry
-2
-​
-3
-# Configuración ventana principal
-4
-root = Tk()
-5
-root.title(***)
-6
-root.resizable(0,0)
-7
-root.geometry(***)
-8
-​
-9
-# Configuración pantalla de salida 
-10
-pantalla = Entry(root, width=40, bg="black", fg="white", borderwidth=0, font=("arial", 18, "bold"))
-11
-pantalla.grid(row=0, column=0, columnspan=***, padx=1, pady=***)
-12
-​
-13
-# Configuración botones
-14
-boton_1 = Button(root, text="1", width=9, height=3, bg="white", fg="red", borderwidth=0, cursor="hand2").grid(row=1, column=***, padx=1, pady=***)
-15
-boton_2 = Button(root, text="2", width=9, height=3, bg="white", fg="red", borderwidth=0, cursor="hand2").grid(row=***, column=***, padx=***, pady=1)
-16
-boton_3 = Button(root, text="3", width=9, height=3, bg="white", fg="red", borderwidth=0, cursor="hand2").grid(row=1, column=***, padx=***, pady=1)
-17
-boton_4 = Button(root, text="4", width=9, height=3, bg="white", fg="red", borderwidth=0, cursor="hand2").grid(row=***, column=***, padx=1, pady=***)
-18
-boton_5 = Button(root, text="5", width=9, height=3, bg="white", fg="red", borderwidth=0, cursor="hand2").grid(row=***, column=1, padx=***, pady=***)
-19
-boton_6 = Button(root, text="6", width=9, height=3, bg="white", fg="red", borderwidth=0, cursor="hand2").grid(row=2, column=***, padx=***, pady=1)
-20
-boton_7 = Button(root, text="7", width=9, height=3, bg="white", fg="red", borderwidth=0, cursor="hand2").grid(row=***, column=***, padx=1, pady=***)
-21
-boton_8 = Button(root, text="8", width=9, height=3, bg="white", fg="red", borderwidth=0, cursor="hand2").grid(row=***, column=***, padx=1, pady=1)
-22
-boton_9 = Button(root, text="9", width=9, height=3, bg="white", fg="red", borderwidth=0, cursor="hand2").grid(row=3, column=2, padx=***, pady=***)
-23
-boton_igual = Button(root, text="=", width=20, height=3, bg="red", fg="white", borderwidth=0, cursor=" hand2").grid(row=4, column=***, columnspan=***, padx=1, pady=1)
-24
-boton_punto = Button(root, text=".", width=9, height=3, bg="spring green", fg="black", cursor="hand2", borderwidth=0).grid(row=***, column=***, padx=1, pady=1)
-25
-boton_mas = Button(root, text="+", width=9, height=3, bg="deep sky blue", fg="black", borderwidth=0, cursor="hand2").grid(row=1, column=***, padx=***, pady=1)
-26
-boton_menos = Button(root, text="-", width=9, height=3, bg="deep sky blue", fg="black", borderwidth=0, cursor="hand2").grid(row=***, column=3, padx=1, pady=1)
-27
-boton_multiplicacion = Button(root, text="*",  width=9, height=3, bg="deep sky blue", fg="black", borderwidth=0, cursor="hand2").grid(row=***, column=***, padx=1, pady=1)
-28
-boton_division = Button(root, text="/", width=9, height=3, bg="deep sky blue", fg="black", borderwidth=0, cursor="hand2").grid(row=***, column=***, padx=1, pady=***)
-29
-​
-30
-root.mainloop()
+        return float(s[0]) + float(s[1])
     elif "-" in s:
         s = s.split("-")
         return float(s[0]) - float(s[1])
